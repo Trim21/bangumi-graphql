@@ -6,8 +6,10 @@ type Subject {
   id: Int!
   name: String!
   name_cn: String!
+  nsfw: Boolean!
 }
 
 type Query {
   subject(id: Int): Subject
+  subjects(ids: [Int!], limit: Int!, offset: Int!): [Subject]
 }
