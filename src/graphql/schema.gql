@@ -1,0 +1,13 @@
+#type Human {
+#    name: String!
+#}
+
+type Subject {
+  id: Int!
+  name: String!
+  name_cn: String!
+}
+
+type Query {
+  subject(id: Int): Subject
+}
